@@ -1,8 +1,8 @@
 export class Stemmer {
-  static regexemr = /e[mr]$/;
-  static regexnd = /nd$/;
-  static regext = /t$/;
-  static regexesn = /[esn]$/;
+  private static regexemr = /e[mr]$/;
+  private static regexnd = /nd$/;
+  private static regext = /t$/;
+  private static regexesn = /[esn]$/;
 
   static stem(word: string, caseInsensitive: boolean = true): string {
     if (word.length === 0) {
