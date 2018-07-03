@@ -1,6 +1,6 @@
 {
   "name": "german-stemmer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Umsetzung eines Stemming-Algorithmus in JavaScript / TypeScript",
   "main": "./lib/Stemmer.js",
   "typings": "./lib/Stemmer.d.ts",
