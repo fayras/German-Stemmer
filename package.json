@@ -2,10 +2,15 @@
   "name": "german-stemmer",
   "version": "1.0.0",
   "description": "Umsetzung eines Stemming-Algorithmus in JavaScript / TypeScript",
-  "main": "index.js",
+  "main": "./lib/Stemmer.js",
+  "typings": "./lib/Stemmer.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fayras/German-Stemmer.git"
@@ -21,7 +26,7 @@
     "url": "https://github.com/fayras/German-Stemmer/issues"
   },
   "homepage": "https://github.com/fayras/German-Stemmer#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^2.9.2"
   }
 }
