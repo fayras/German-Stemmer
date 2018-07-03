@@ -1,0 +1,27 @@
+{
+  "name": "german-stemmer",
+  "version": "1.0.0",
+  "description": "Umsetzung eines Stemming-Algorithmus in JavaScript / TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fayras/German-Stemmer.git"
+  },
+  "keywords": [
+    "stemmer",
+    "stemming",
+    "german"
+  ],
+  "author": "Dimitri Tarnavski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fayras/German-Stemmer/issues"
+  },
+  "homepage": "https://github.com/fayras/German-Stemmer#readme",
+  "dependencies": {
+    "typescript": "^2.9.2"
+  }
+}
