@@ -1,4 +1,4 @@
-export declare class Stemmer {
+export default class Stemmer {
     private static regexemr;
     private static regexnd;
     private static regext;
