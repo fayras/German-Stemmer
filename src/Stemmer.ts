@@ -1,4 +1,4 @@
-export class Stemmer {
+export default class Stemmer {
   private static regexemr = /e[mr]$/;
   private static regexnd = /nd$/;
   private static regext = /t$/;
@@ -23,7 +23,7 @@ export class Stemmer {
       .replace(/sch/, '$$')
       .replace(/ei/, '%')
       .replace(/ie/, '&')
-      .replace(/(.)\\1/, '$1*');
+      .replace(/(.)\1/, '$1*');
 
     while(stem.length > 3) {
       if(stem.length > 5) {
@@ -54,10 +54,10 @@ export class Stemmer {
     }
 
     stem = stem
-      .replace(/(.)\\*/, '$1$1')
+      .replace(/(.)\*/, '$1$1')
       .replace(/%/, 'ei')
-      .replace(/&i/, 'ie')
-      .replace(/\\$/, 'sch');
+      .replace(/&/, 'ie')
+      .replace(/\$/, 'sch');
 
     return stem;
   }
